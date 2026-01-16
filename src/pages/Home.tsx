@@ -4,6 +4,7 @@ import Quote from "../components/quote"; // <- importe ton composant Quote
 
 export default function Home() {
   return (
+  
     <div className="min-h-screen bg-gray-900 text-white">
       
       {/* HERO */}
