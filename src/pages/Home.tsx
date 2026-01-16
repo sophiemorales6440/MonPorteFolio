@@ -1,4 +1,5 @@
 import photoProfile from "../assets/image/profile.png";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -15,21 +16,21 @@ export default function Home() {
             Bonjour, je suis Sophie
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-8">
-            Développeuse Web Full Stack
+            Développeuse Web Full Stack 🤞🍀
           </p>
           <div className="flex gap-4 justify-center">
-            <a
-              href="/projects"
+            <Link
+              to="/projects"
               className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition"
             >
               Voir mes projets
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="border border-gray-600 hover:border-gray-400 px-6 py-3 rounded-lg font-semibold transition"
             >
               Me contacter
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -42,14 +43,14 @@ export default function Home() {
             Un projet en tête ? N'hésitez pas à me contacter !
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:sophie@example.com"
+            <Link
+              to="/contact"
               className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition"
             >
-              📧 Email
-            </a>
+              📩 Me contacter
+            </Link>
             <a
-              href="https://github.com/ton-github"
+              href="https://github.com/sophiemorales6440"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 hover:bg-gray-700 px-8 py-3 rounded-lg font-semibold transition"
@@ -57,7 +58,7 @@ export default function Home() {
               💻 GitHub
             </a>
             <a
-              href="https://linkedin.com/in/ton-profil"
+              href="https://www.linkedin.com/in/sophie-morales-30292b397/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 hover:bg-gray-700 px-8 py-3 rounded-lg font-semibold transition"

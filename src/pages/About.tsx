@@ -5,7 +5,8 @@ export default function About() {
 
       <p className="mb-8">
         Passionnée par le développement web depuis plusieurs années, je crée des applications modernes et performantes.
-J'aime résoudre des problèmes complexes et transformer des idées en produits concrets et utilisables. Mon approche allie créativité et rigueur technique.
+<br />J'aime résoudre des problèmes complexes et transformer des idées en produits concrets et utilisables. 
+<br />Mon approche allie créativité et rigueur technique.
       </p>
 
       {/* Compétences */}

@@ -21,7 +21,7 @@ const projects = [
     description: "Me présenter avec REACT",
     image: "src/assets/image/profile.png",
     technologies: ["Vite", "React"],
-    link: "https://github.com/ton-projet"
+    link: "https://github.com/ton-projethttps://github.com/sophiemorales6440/MonPorteFolio.git"
   }
 ];
 
