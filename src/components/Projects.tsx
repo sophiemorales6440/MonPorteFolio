@@ -1,15 +1,16 @@
 type Project = {
-  id: number
-  title: string
-  description: string
-  image: string
-  technologies: string[]
-  link: string
-}
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  link: string;
+};
 
 type ProjectsProps = {
-  projects: Project[]
-}
+  projects?: Project[];
+};
+;
 
 export default function Projects({ projects }: ProjectsProps) {
   return (
@@ -56,5 +57,5 @@ export default function Projects({ projects }: ProjectsProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Un singe en Hiver",
+    "description": "Un restaurant comme on aime",
+    "image": "/SINGE.png",
+    "technologies": ["HTML", "CSS"],
+    "link": "https://github.com/sophiemorales6440/premier-site.git"
+  },
+  {
+    "id": 2,
+    "title": "Melody Factory",
+    "description": "Clicker Game",
+    "image": "/Melody.png",
+    "technologies": ["JavaScript", "Figma"],
+    "link": "https://github.com/prescilliarosart/Melody-Factory.git"
+  },
+  {
+    "id": 3,
+    "title": "The Portfolio",
+    "description": "Me présenter avec REACT",
+    "image": "/profile.png",
+    "technologies": ["Vite", "React"],
+    "link": "https://github.com/sophiemorales6440/MonPorteFolio.git"
+  }
+]

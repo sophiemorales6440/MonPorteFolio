@@ -1,9 +1,11 @@
-import photoProfile from "../assets/image/profile.png";
-import { Link } from "react-router-dom";
+import photoProfile from "../assets/images/profile.png";
+import ProjectsPage from "../pages/ProjectsPage";
+import Quote from "../components/quote"; // <- importe ton composant Quote
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
+      
       {/* HERO */}
       <section id="home" className="min-h-screen flex items-center justify-center px-6">
         <div className="text-center">
@@ -19,23 +21,29 @@ export default function Home() {
             Développeuse Web Full Stack 🤞🍀
           </p>
           <div className="flex gap-4 justify-center">
-            <Link
-              to="/projects"
+            <a
+              href="#projects"
               className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition"
             >
               Voir mes projets
-            </Link>
-            <Link
-              to="/contact"
+            </a>
+            <a
+              href="#contact"
               className="border border-gray-600 hover:border-gray-400 px-6 py-3 rounded-lg font-semibold transition"
             >
               Me contacter
-            </Link>
+            </a>
           </div>
         </div>
       </section>
 
-      {/* CONTACT */}
+      {/* SECTION CITATION */}
+      <Quote /> {/* <- Ici, juste après le Hero */}
+
+      {/* SECTION PROJETS */}
+      <ProjectsPage />
+      
+      {/* SECTION CONTACT */}
       <section id="contact" className="py-20 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Me contacter</h2>
@@ -43,12 +51,12 @@ export default function Home() {
             Un projet en tête ? N'hésitez pas à me contacter !
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
+            <a
+              href="mailto:sophie@example.com"
               className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition"
             >
               📩 Me contacter
-            </Link>
+            </a>
             <a
               href="https://github.com/sophiemorales6440"
               target="_blank"

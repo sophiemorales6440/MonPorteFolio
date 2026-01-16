@@ -1,28 +1,42 @@
-const projects = [
+
+import singeImg from "../assets/images/SINGE.png";
+import melodyImg from "../assets/images/Melody.png";
+import profileImg from "../assets/images/profile.png";
+
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  link: string;
+};
+
+const projects: Project[] = [
   {
     id: 1,
     title: "Un singe en Hiver",
     description: "Un restaurant comme on aime",
-    image: "src/assets/SINGE.png",
-    technologies: ["Html", "Css"],
-    link: "https://github.com/sophiemorales6440/premier-site.git"
+    image: singeImg,
+    technologies: ["HTML", "CSS"],
+    link: "https://github.com/sophiemorales6440/premier-site.git",
   },
   {
     id: 2,
     title: "Melody Factory",
     description: "Clicker Game",
-    image: "src/assets/Melody.png",
-    technologies: ["Javascrip", "Figma"],
-    link: "https://github.com/prescilliarosart/Melody-Factory.git"
+    image: melodyImg,
+    technologies: ["Javascript", "Figma"],
+    link: "https://github.com/prescilliarosart/Melody-Factory.git",
   },
   {
     id: 3,
-    title: "The PortFolio",
-    description: "Me présenter avec REACT",
-    image: "src/assets/image/profile.png",
+    title: "The Portfolio",
+    description: "Me présenter avec React",
+    image: profileImg,
     technologies: ["Vite", "React"],
-    link: "https://github.com/ton-projethttps://github.com/sophiemorales6440/MonPorteFolio.git"
-  }
+    link: "https://github.com/sophiemorales6440/MonPorteFolio.git",
+  },
 ];
 
 export default function ProjectsPage() {
@@ -42,7 +56,9 @@ export default function ProjectsPage() {
               alt={project.title}
               className="h-48 w-full object-cover mb-4"
             />
-            <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
+            <h3 className="text-xl font-bold mb-2 text-white">
+              {project.title}
+            </h3>
             <p className="text-gray-400 mb-2">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-2">
               {project.technologies.map((tech) => (
