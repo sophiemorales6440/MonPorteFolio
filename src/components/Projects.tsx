@@ -1,7 +1,7 @@
 import { useIsMobile } from "../hooks/useIsMobile";
 import singeImg from "../assets/images/singe.png";
 import melodyImg from "../assets/images/Melody.png";
-import PortfolioImg from "../assets/images/Portfolio.png";
+import portfolioImg from "../assets/images/portfolio.png";
 import StrasgiteImg from "../assets/images/strasgite.png";
 import ticketflowImg from "../assets/images/ticketflow.png";
 import cvImg from "../assets/images/cvimage.png";
@@ -34,9 +34,9 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "The Portfolio",
+    title: "The portfolio",
     description: "Mon portfolio personnel conçu avec React et Vite. Design éditorial original, composants TypeScript, responsive mobile et intégration d'une K7 rétro animée.",
-    image: PortfolioImg,
+    image: portfolioImg,
     technologies: ["Vite", "React", "TypeScript"],
     link: "https://github.com/sophiemorales6440/MonPorteFolio.git",
   },

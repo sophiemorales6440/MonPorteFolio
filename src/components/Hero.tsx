@@ -1,4 +1,4 @@
-import photoProfile from "../assets/images/profile.png";
+import photoprofile from "../assets/images/profile.png";
 
 {/* HERO */}
 <section style={{ background: "#f8f4ef", minHeight: "88vh", padding: "100px 60px 60px", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
@@ -11,7 +11,7 @@ import photoProfile from "../assets/images/profile.png";
   {/* Contenu */}
   <div style={{ position: "relative", zIndex: 1, maxWidth: "720px" }}>
     <div style={{ fontFamily: "'VT323', monospace", fontSize: "13px", color: "#c17f24", letterSpacing: ".15em", marginBottom: "24px" }}>
-      — PORTFOLIO 2026 —
+      — portfolio 2026 —
     </div>
 
     <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(42px, 7vw, 80px)", lineHeight: 1.05, fontWeight: 700, marginBottom: "8px", color: "#2a1f0e" }}>
@@ -30,7 +30,7 @@ import photoProfile from "../assets/images/profile.png";
     {/* Carte identité inline */}
     <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "40px" }}>
       <div style={{ width: "64px", height: "64px", borderRadius: "50%", overflow: "hidden", border: "2px solid #c17f24", flexShrink: 0 }}>
-        <img src={photoProfile} alt="Sophie" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 38%" }} />
+        <img src={photoprofile} alt="Sophie" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 38%" }} />
       </div>
       <div>
         <div style={{ fontSize: "14px", fontWeight: 500, color: "#2a1f0e", fontFamily: "'DM Sans', sans-serif" }}>Sophie Morales</div>

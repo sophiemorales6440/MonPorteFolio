@@ -32,7 +32,7 @@ export default function Cassette() {
 
       {/* Étiquette */}
       <div style={{ background: "#c17f24", borderRadius: "3px", padding: "6px 20px", fontSize: "11px", letterSpacing: ".15em", textTransform: "uppercase", color: "#fff" }}>
-        Sophie Morales · Dev Portfolio
+        Sophie Morales · Dev portfolio
       </div>
 
       {/* Corps de la cassette */}

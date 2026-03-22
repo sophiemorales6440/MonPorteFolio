@@ -1,4 +1,4 @@
-import photoProfile from "../assets/images/profile.png";
+import photoprofile from "../assets/images/profile.png";
 import Projects from "../components/Projects";
 import Cassette from "../components/Cassette";
 
@@ -29,7 +29,7 @@ export default function Home() {
     {/* Colonne gauche */}
     <div>
       <div style={{ fontFamily: "'VT323', monospace", fontSize: "13px", color: "#c17f24", letterSpacing: ".15em", marginBottom: "24px" }}>
-        — PORTFOLIO 2026 —
+        — portfolio 2026 —
       </div>
       <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(42px, 5vw, 72px)", lineHeight: 1.05, fontWeight: 700, marginBottom: "8px", color: "#2a1f0e" }}>
         Bonjour,<br />je suis <em style={{ color: "#c17f24" }}>Sophie</em>
@@ -45,7 +45,7 @@ export default function Home() {
       {/* Carte identité */}
       <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "32px" }}>
         <div style={{ width: "56px", height: "56px", borderRadius: "50%", overflow: "hidden", border: "2px solid #c17f24", flexShrink: 0 }}>
-          <img src={photoProfile} alt="Sophie" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 38%" }} />
+          <img src={photoprofile} alt="Sophie" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 38%" }} />
         </div>
         <div>
           <div style={{ fontSize: "14px", fontWeight: 500, color: "#2a1f0e" }}>Sophie Morales</div>
