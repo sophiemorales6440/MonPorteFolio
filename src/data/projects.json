@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Un singe en Hiver",
     "description": "Un restaurant comme on aime",
-    "image": "/SINGE.png",
+    "image": "/singe.png",
     "technologies": ["HTML", "CSS"],
     "link": "https://github.com/sophiemorales6440/premier-site.git"
   },
@@ -27,7 +27,7 @@
     "id": 1,
     "title": "Un singe en Hiver",
     "description": "Un restaurant comme on aime",
-    "image": "/SINGE.png",
+    "image": "/singe.png",
     "technologies": ["HTML", "CSS"],
     "link": "https://github.com/sophiemorales6440/premier-site.git"
   },
