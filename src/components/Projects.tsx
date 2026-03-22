@@ -1,6 +1,6 @@
 import { useIsMobile } from "../hooks/useIsMobile";
 import singeImg from "../assets/images/singe.png";
-import melodyImg from "../assets/images/Melody.png";
+import melodyImg from "../assets/images/melody.png";
 import portfolioImg from "../assets/images/portfolio.png";
 import StrasgiteImg from "../assets/images/strasgite.png";
 import ticketflowImg from "../assets/images/ticketflow.png";
@@ -26,11 +26,11 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Melody Factory",
+    title: "melody Factory",
     description: "Jeu de type clicker développé en JavaScript vanilla en équipe. Gestion des événements, logique de score et animations. Maquette réalisée sur Figma avant intégration.",
     image: melodyImg,
     technologies: ["Javascript", "Figma"],
-    link: "https://github.com/prescilliarosart/Melody-Factory.git",
+    link: "https://github.com/prescilliarosart/melody-Factory.git",
   },
   {
     id: 3,
