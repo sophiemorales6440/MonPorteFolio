@@ -75,11 +75,11 @@ export default function Home() {
   </div>
 </section>
       {/* PROJETS */}
-      <section id="projects" style={{ background: "#f8f4ef", padding: "0px 40px", fontFamily: "'DM Sans', sans-serif", borderTop: "1px solid #e0d5c0" }}></section>
+      <section id="projects" style={{ background: "#f8f4ef", padding: isMobile ? "6px 24px" : "80px 60px", fontFamily: "'DM Sans', sans-serif", borderTop: "1px solid #e0d5c0" }}></section>
       <Projects />
 
       {/* CONTACT */}
-      <section id="contact" style={{ background: "#2a1f0e", padding: "80px 60px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "center" }}>
+      <section id="contact" style={{ background: "#2a1f0e", padding: isMobile ? "60px 24px" : "80px 60px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "center" }}>
         <div>
           <p style={{ fontSize: "11px", letterSpacing: ".15em", textTransform: "uppercase", color: "#c17f24", marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px" }}>
             <span style={{ display: "inline-block", width: "32px", height: "1px", background: "#c17f24" }} />

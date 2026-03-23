@@ -22,7 +22,8 @@ export default function Cassette() {
   return (
 <section style={{ 
   background: "#f2ece4", 
-  padding: isMobile ? "32px 16px" : "60px 40px", 
+  padding: isMobile ? "24px 16px" : "60px 40px", 
+  overflow: "hidden",
   display: "flex", 
   flexDirection: "column", 
   alignItems: "center", 
@@ -45,7 +46,7 @@ export default function Cassette() {
       </div>
 
       {/* Corps de la cassette */}
-      <div style={{ background: "#f8f4ef", borderRadius: "8px", padding: "24px 32px", width: "100%", maxWidth: "520px", border: "1px solid #e0d5c0" }}>
+      <div style={{ background: "#f8f4ef", borderRadius: "8px", padding: "24px 32px", width: "100%", maxWidth: "520px", border: "1px solid #e0d5c0", overflow: "hidden" }}>
 
         {/* Header */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
