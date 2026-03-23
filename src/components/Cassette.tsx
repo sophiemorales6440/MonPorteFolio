@@ -12,12 +12,15 @@ export default function Cassette() {
   const [playing, setPlaying] = useState(true);
 
   const reelStyle: React.CSSProperties = {
-    width: "64px", height: "64px", borderRadius: "50%",
-    background: "#f0e6d3", border: "3px solid #d4cdc4",
-    display: "flex", alignItems: "center", justifyContent: "center",
-    position: "relative",
-    animation: playing ? "spin 2s linear infinite" : "none",
-  };
+  width: isMobile ? "48px" : "64px",
+  height: isMobile ? "48px" : "64px",
+  borderRadius: "50%",
+  background: "#f0e6d3",
+  border: "3px solid #d4cdc4",
+  display: "flex", alignItems: "center", justifyContent: "center",
+  position: "relative",
+  animation: playing ? "spin 2s linear infinite" : "none",
+};
 
   return (
 <section style={{ 
@@ -46,8 +49,7 @@ export default function Cassette() {
       </div>
 
       {/* Corps de la cassette */}
-      <div style={{ background: "#f8f4ef", borderRadius: "8px", padding: "24px 32px", width: "100%", maxWidth: "520px", border: "1px solid #e0d5c0", overflow: "hidden" }}>
-
+<div style={{ background: "#f8f4ef", borderRadius: "8px", padding: isMobile ? "16px" : "24px 32px", width: "100%", maxWidth: "520px", border: "1px solid #e0d5c0", overflow: "hidden" }}>
         {/* Header */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
           <div>
@@ -61,8 +63,7 @@ export default function Cassette() {
         </div>
 
         {/* Bobines */}
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "60px", margin: "8px 0 20px" }}>
-          <div style={{ ...reelStyle }}>
+<div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: isMobile ? "30px" : "60px", margin: "8px 0 20px" }}>          <div style={{ ...reelStyle }}>
             {[0, 60, 120].map(deg => (
               <div key={deg} style={{ position: "absolute", width: "2px", height: "22px", background: "#ccc", borderRadius: "1px", transformOrigin: "center center", transform: `rotate(${deg}deg) translateY(-11px)` }} />
             ))}
