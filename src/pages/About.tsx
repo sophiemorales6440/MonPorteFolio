@@ -1,4 +1,6 @@
+import Stats from "../components/Stats";
 import { useIsMobile } from "../hooks/useIsMobile";
+
 
 export default function About() {
   const isMobile = useIsMobile();
@@ -26,8 +28,8 @@ export default function About() {
             Qui suis-je,<br /><em style={{ color: "#c17f24" }}>vraiment ?</em>
           </h1>
           <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.8 }}>
-            Passionnée par le développement web, je crée des applications modernes et performantes.
-            J'aime résoudre des problèmes complexes et transformer des idées en produits concrets.
+            Passionnée par le développement et la création web, je crée des applications modernes et performantes.
+            J'aime résoudre des problèmes complexes, et transformer des idées en produits concrets.
             Mon approche allie créativité et rigueur technique.
           </p>
         </div>
@@ -73,13 +75,7 @@ export default function About() {
       </section>
 
       {/* CITATION */}
-      <section style={{ background: "#2a1f0e", color: "#f8f4ef", padding: isMobile ? "40px 24px" : "60px 40px", textAlign: "center" }}>
-        <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "22px", fontStyle: "italic", lineHeight: 1.6, maxWidth: "560px", margin: "0 auto 16px" }}>
-          "Chaque ligne de code est une opportunité d'apprendre quelque chose de nouveau."
-        </p>
-        <span style={{ fontSize: "12px", letterSpacing: ".1em", textTransform: "uppercase", color: "#c17f24" }}>— Sophie Morales</span>
-      </section>
-
-    </div>
+     <Stats/>
+     </div>
   );
 }

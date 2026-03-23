@@ -26,7 +26,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "melody Factory",
+    title: "Melody Factory",
     description: "Jeu de type clicker développé en JavaScript vanilla en équipe. Gestion des événements, logique de score et animations. Maquette réalisée sur Figma avant intégration.",
     image: melodyImg,
     technologies: ["Javascript", "Figma"],
@@ -34,7 +34,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "The portfolio",
+    title: "Mon portfolio",
     description: "Mon portfolio personnel conçu avec React et Vite. Design éditorial original, composants TypeScript, responsive mobile et intégration d'une K7 rétro animée.",
     image: portfolioImg,
     technologies: ["Vite", "React", "TypeScript"],
@@ -58,11 +58,11 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: "CV",
+    title: "Mon CV",
     description: "Mon curriculum vitae à télécharger.",
     image: cvImg,
     technologies: ["Canva"],
-    link: "/cv.pdf",
+    link: "/cvsophiemorales.pdf",
   },
 ];
 

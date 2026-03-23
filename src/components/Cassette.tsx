@@ -1,4 +1,5 @@
-import { useState, } from "react";
+import { useState } from "react";
+import { useIsMobile } from "../hooks/useIsMobile"; 
 
 const faces = {
   a: ["React", "TypeScript", "Tailwind CSS", "Figma", "HTML / CSS", "Vite"],
@@ -6,6 +7,7 @@ const faces = {
 };
 
 export default function Cassette() {
+  const isMobile = useIsMobile();
   const [currentFace, setCurrentFace] = useState<"a" | "b">("a");
   const [playing, setPlaying] = useState(true);
 
@@ -18,8 +20,15 @@ export default function Cassette() {
   };
 
   return (
-    <section style={{ background: "#f0e6d3", padding: "60px 40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "28px", fontFamily: "'DM Sans', sans-serif" }}>
-
+<section style={{ 
+  background: "#f2ece4", 
+  padding: isMobile ? "32px 16px" : "60px 40px", 
+  display: "flex", 
+  flexDirection: "column", 
+  alignItems: "center", 
+  gap: "28px", 
+  fontFamily: "'DM Sans', sans-serif" 
+}}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
         @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

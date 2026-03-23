@@ -1,8 +1,11 @@
 import photoprofile from "../assets/images/profile.png";
 import Projects from "../components/Projects";
 import Cassette from "../components/Cassette";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 export default function Home() {
+  const isMobile = useIsMobile();
+
   return (
     <div style={{ background: "#f8f4ef", color: "#2a1f0e", fontFamily: "'DM Sans', sans-serif" }}>
 
@@ -24,7 +27,7 @@ export default function Home() {
 {/* Cercle petit gauche bas */}
 <div style={{ position: "absolute", left: "60px", bottom: "10px", width: "100px", height: "100px", borderRadius: "50%", background: "#e0d5c0", opacity: .4, zIndex: 0 }} />
   {/* Conteneur centré */}
-  <div style={{ maxWidth: "1100px", margin: "0 auto", width: "100%", padding: "100px 60px 60px", display: "grid", gridTemplateColumns: "1fr 1fr", alignItems: "center", gap: "40px", position: "relative", zIndex: 1 }}>
+  <div style={{ maxWidth: "1100px", margin: "0 auto", width: "100%", padding: isMobile ? "80px 24px 40px" : "100px 60px 60px", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", alignItems: "center", gap: "40px", position: "relative",  zIndex: 1 }}>
 
     {/* Colonne gauche */}
     <div>
@@ -38,13 +41,13 @@ export default function Home() {
         Développeuse Full Stack 🍀
       </h2>
       <p style={{ fontSize: "15px", color: "#666", lineHeight: 1.8, maxWidth: "420px", marginBottom: "32px" }}>
-        Passionnée par la création d'expériences web, du backend à l'interface.
+        Passionnée par la création et les realisations web, du backend à l'interface.
         Je construis des applications modernes avec React, Node.js et TypeScript.
       </p>
 
       {/* Carte identité */}
       <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "32px" }}>
-        <div style={{ width: "56px", height: "56px", borderRadius: "50%", overflow: "hidden", border: "2px solid #c17f24", flexShrink: 0 }}>
+        <div style={{ width: "100px", height: "100px", borderRadius: "50%", overflow: "hidden", border: "2px solid #c17f24", flexShrink: 0 }}>
           <img src={photoprofile} alt="Sophie" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 38%" }} />
         </div>
         <div>
