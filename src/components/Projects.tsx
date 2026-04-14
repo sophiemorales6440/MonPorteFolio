@@ -1,10 +1,10 @@
 import { useIsMobile } from "../hooks/useIsMobile";
 import singeImg from "../assets/images/singe.png";
 import melodyImg from "../assets/images/melody.png";
-import portfolioImg from "../assets/images/portfolio.png";
 import StrasgiteImg from "../assets/images/strasgite.png";
 import ticketflowImg from "../assets/images/ticketflow.png";
 import cvImg from "../assets/images/cvimage.png";
+import pepite from "../assets/images/pepite.svg";
 
 type Project = {
   id: number;
@@ -30,23 +30,16 @@ const projects: Project[] = [
     description: "Jeu de type clicker développé en JavaScript vanilla en équipe. Gestion des événements, logique de score et animations. Maquette réalisée sur Figma avant intégration.",
     image: melodyImg,
     technologies: ["Javascript", "Figma"],
-    link: "https://github.com/prescilliarosart/melody-Factory.git",
+    link: "https://melody-factoryprojects1.vercel.app/",
   },
-  {
-    id: 3,
-    title: "Mon portfolio",
-    description: "Mon portfolio personnel conçu avec React et Vite. Design éditorial original, composants TypeScript, responsive mobile et intégration d'une K7 rétro animée.",
-    image: portfolioImg,
-    technologies: ["Vite", "React", "TypeScript"],
-    link: "https://github.com/sophiemorales6440/MonPorteFolio.git",
-  },
+
   {
     id: 4,
     title: "Strasgite",
     description: "Site vitrine d'un gite alsacien développé en équipe. Responsable de la maquette Figma, des composants React, du routing, des appels API et du design CSS.",
     image: StrasgiteImg,
     technologies: ["Vite", "React", "Figma"],
-    link: "https://github.com/WildCodeSchool-2025-11/dev-web-orange-strasgite.git",
+    link: "https://projetstrasgite.vercel.app/",
   },
   {
     id: 5,
@@ -54,16 +47,25 @@ const projects: Project[] = [
     description: "Application full stack de gestion de tickets SAV développée en équipe de 5. Architecture MVC, CRUD complet, authentification et gestion des roles. Projet de fin de formation Wild Code School.",
     image: ticketflowImg,
     technologies: ["React", "TypeScript", "Node.js", "MySQL"],
-    link: "https://github.com/WildCodeSchool-2025-11/dev-web-orange-strasgite.git",
+    link: "https://p3-ticketflow-front.onrender.com/login",
   },
   {
     id: 6,
+    title: "Pépite",
+    description: "Projet personnel en cours de développement : une plateforme de gestion des propects immobiliers pour les agents commerciaux. Frontend en React avec intégration d'une API REST, backend en Node.js avec Express et base de données MySQL.",
+    image: pepite,
+    technologies: ["React", "API", "MySQL"],
+    link: "https://pepite-frontend.onrender.com/login"
+  },
+  {
+    id: 7,
     title: "Mon CV",
     description: "Mon curriculum vitae à télécharger.",
     image: cvImg,
     technologies: ["Canva"],
-    link: "/cvsophiemorales.pdf",
+    link: "/cvdev.pdf",
   },
+  
 ];
 
 export default function Projects() {
@@ -132,7 +134,7 @@ export default function Projects() {
                 download={project.id === 6 ? true : undefined}
                 style={{ marginTop: "auto", paddingTop: "16px", borderTop: "1px solid #e0d5c0", fontSize: "12px", letterSpacing: ".1em", textTransform: "uppercase", color: "#c17f24", textDecoration: "none", display: "block" }}
               >
-                  {project.id === 6 ? "Voir mon CV" : "Voir sur GitHub"}
+                  {project.id === 7 ? "Voir mon CV" : "Voir le projet"}
               </a>
             </div>
           </article>
