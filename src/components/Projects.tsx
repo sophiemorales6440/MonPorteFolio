@@ -47,7 +47,7 @@ const projects: Project[] = [
     description: "Application full stack de gestion de tickets SAV développée en équipe de 5. Architecture MVC, CRUD complet, authentification et gestion des roles. Projet de fin de formation Wild Code School.",
     image: ticketflowImg,
     technologies: ["React", "TypeScript", "Node.js", "MySQL"],
-    link: "https://p3-ticketflow-front.onrender.com/login",
+    link: "https://p3-ticketflow-front.vercel.app/login",
   },
   {
     id: 6,
