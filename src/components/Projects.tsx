@@ -55,7 +55,7 @@ const projects: Project[] = [
     description: "Projet personnel en cours de développement : une plateforme de gestion des propects immobiliers pour les agents commerciaux. Frontend en React avec intégration d'une API REST, backend en Node.js avec Express et base de données MySQL.",
     image: pepite,
     technologies: ["React", "API", "MySQL"],
-    link: "https://pepite-frontend.onrender.com/login"
+    link: "https://pepite-frontend-one.vercel.app/login"
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ const projects: Project[] = [
     description: "Mon curriculum vitae à télécharger.",
     image: cvImg,
     technologies: ["Canva"],
-    link: "/cvdev.pdf",
+    link: "/CV SOPHIE MORALES JUIN 2026.pdf",
   },
   
 ];
