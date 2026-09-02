@@ -19,7 +19,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Un singe en Hiver",
-    description: "Premier projet solo en formation. Site vitrine d'un restaurant concu entièrement en HTML et CSS pur, sans framework. Mise en page responsive et travail approfondi sur la sémantique.",
+    description: "Premier projet solo en formation. Site vitrine d'un restaurant conçu entièrement en HTML et CSS pur, sans framework. Mise en page responsive et travail approfondi sur la sémantique.",
     image: singeImg,
     technologies: ["HTML", "CSS"],
     link: "https://github.com/sophiemorales6440/premier-site.git",
@@ -32,17 +32,16 @@ const projects: Project[] = [
     technologies: ["Javascript", "Figma"],
     link: "https://melody-factoryprojects1.vercel.app/",
   },
-
   {
-    id: 4,
+    id: 3,
     title: "Strasgite",
-    description: "Site vitrine d'un gite alsacien développé en équipe. Responsable de la maquette Figma, des composants React, du routing, des appels API et du design CSS.",
+    description: "Site vitrine d'un gite alsacien développé en équipe. Responsable de la maquette Figma, des composants React, du routing, des appels API, du design responsive sur-mesure (mobile first) et de la charte graphique de l'ensemble du site.",
     image: StrasgiteImg,
     technologies: ["Vite", "React", "Figma"],
     link: "https://projetstrasgite.vercel.app/",
   },
   {
-    id: 5,
+    id: 4,
     title: "TicketFlow",
     description: "Application full stack de gestion de tickets SAV développée en équipe de 5. Architecture MVC, CRUD complet, authentification et gestion des roles. Projet de fin de formation Wild Code School.",
     image: ticketflowImg,
@@ -50,22 +49,21 @@ const projects: Project[] = [
     link: "https://p3-ticketflow-front.vercel.app/login",
   },
   {
-    id: 6,
+    id: 5,
     title: "Pépite",
-    description: "Projet personnel en cours de développement : une plateforme de gestion des propects immobiliers pour les agents commerciaux. Frontend en React avec intégration d'une API REST, backend en Node.js avec Express et base de données MySQL.",
+    description: "Plateforme de gestion des prospects immobiliers pour agents commerciaux, développée à partir d'une commande client réelle. Frontend en React avec intégration d'une API REST, backend en Node.js avec Express et base de données MySQL. Correction de bugs complexes sur la logique de calcul des commissions et sur la messagerie instantanée entre apporteurs d'affaires.",
     image: pepite,
     technologies: ["React", "API", "MySQL"],
     link: "https://pepite-frontend-one.vercel.app/login"
   },
   {
-    id: 7,
+    id: 6,
     title: "Mon CV",
     description: "Mon curriculum vitae à télécharger.",
     image: cvImg,
-    technologies: ["Canva"],
-    link: "/CV SOPHIE MORALES JUIN 2026.pdf",
+    technologies: ["React", "TypeScript"],
+    link: "/CV_Sophie_Morales_Developpeuse_Web.pdf",
   },
-  
 ];
 
 export default function Projects() {
@@ -78,7 +76,7 @@ export default function Projects() {
         <div>
           <p style={{ fontSize: "11px", letterSpacing: ".15em", textTransform: "uppercase", color: "#c17f24", marginBottom: "16px", display: "flex", alignItems: "center", gap: "10px" }}>
             <span style={{ display: "inline-block", width: "32px", height: "1px", background: "#c17f24" }} />
-            Realisations
+            Réalisations
           </p>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(32px, 4vw, 48px)", lineHeight: 1.1, color: "#2a1f0e" }}>
             Mes <em style={{ fontStyle: "italic", color: "#c17f24" }}>projets</em>
@@ -131,10 +129,10 @@ export default function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                download={project.id === 6 ? true : undefined}
+                download={project.id === 6 ? "CV_Sophie_Morales.pdf" : undefined}
                 style={{ marginTop: "auto", paddingTop: "16px", borderTop: "1px solid #e0d5c0", fontSize: "12px", letterSpacing: ".1em", textTransform: "uppercase", color: "#c17f24", textDecoration: "none", display: "block" }}
               >
-                  {project.id === 7 ? "Voir mon CV" : "Voir le projet"}
+                  {project.id === 6 ? "Voir mon CV" : "Voir le projet"}
               </a>
             </div>
           </article>

@@ -41,7 +41,7 @@ export default function Home() {
         Développeuse Full Stack 🍀
       </h2>
       <p style={{ fontSize: "15px", color: "#666", lineHeight: 1.8, maxWidth: "420px", marginBottom: "32px" }}>
-        Passionnée par la création et les realisations web, du backend à l'interface.
+        Passionnée par la création et les réalisations web, du backend à l'interface.
         Je construis des applications modernes avec React, Node.js et TypeScript.
       </p>
 
@@ -54,6 +54,12 @@ export default function Home() {
           <div style={{ fontSize: "14px", fontWeight: 500, color: "#2a1f0e" }}>Sophie Morales</div>
           <div style={{ fontSize: "11px", color: "#c17f24", letterSpacing: ".1em", textTransform: "uppercase" }}>Wild Code School 2026</div>
         </div>
+      </div>
+
+      {/* Statut de disponibilité */}
+      <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#f0e6d3", padding: "8px 16px", borderRadius: "20px", marginBottom: "32px" }}>
+        <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#4a9d6f", flexShrink: 0 }} />
+        <span style={{ fontSize: "12px", color: "#2a1f0e" }}>Recherche une alternance — disponible à partir du 5 octobre 2026</span>
       </div>
 
       {/* Boutons */}
@@ -86,7 +92,7 @@ export default function Home() {
             Travaillons<br /><em style={{ color: "#c17f24" }}>ensemble</em>
           </h2>
           <p style={{ color: "#888", fontSize: "15px", lineHeight: 1.7 }}>
-            Un projet en tete ? N'hesite pas a me contacter, je serais ravie d'en discuter.
+            Un projet en tête ? N'hésite pas à me contacter, je serais ravie d'en discuter.
           </p>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>

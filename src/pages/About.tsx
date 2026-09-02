@@ -37,10 +37,10 @@ export default function About() {
         {/* Carte identité */}
         <div style={{ background: "#f0e6d3", borderRadius: "4px", padding: "36px", display: "flex", flexDirection: "column", gap: "0", alignSelf: "start" }}>
           {[
-            { label: "Formation", value: "Wild Code School — Bac+2 Web" },
+            { label: "Formation", value: "Wild Code School — Bac+2 Web · GRETA-CFA Aquitaine — RNCP 6 (en cours)" },
             { label: "Spécialité", value: "Full Stack · React & Node.js" },
             { label: "Localisation", value: "Landes, France 🌲" },
-            { label: "Disponibilité", value: "Alternance recherchée" },
+            { label: "Disponibilité", value: "Alternance recherchée — dès le 5 octobre 2026" },
           ].map(({ label, value }) => (
             <div key={label} style={{ display: "flex", flexDirection: "column", gap: "4px", paddingBottom: "20px", marginBottom: "20px", borderBottom: "1px solid #e0d5c0" }}>
               <span style={{ fontSize: "11px", letterSpacing: ".1em", textTransform: "uppercase", color: "#c17f24" }}>{label}</span>
